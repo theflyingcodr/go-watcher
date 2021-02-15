@@ -2,11 +2,9 @@ version: '2.1'
 
 services:
   hello:
-    image: canthefason/go-watcher:latest
+    image: theflyingcodr/watcher:1.15.8
     command: watcher -run hello
     ports:
       - "7000:7000"
-    environment:
-      - GO_VERSION=1.7
     volumes:
       - ./hello:/go/src/hello
